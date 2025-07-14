@@ -1,27 +1,140 @@
-<!-- products/product2.html -->
 <!DOCTYPE html>
 <html lang="bn">
 <head>
   <meta charset="UTF-8">
   <title>Since Our Heart Met</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f7f7f7;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 18px;
+      margin: 5px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: all 0.2s ease;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .home-btn {
+      background: #eee;
+      color: #333;
+    }
+    .home-btn:hover {
+      background: #ddd;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .product-card h2 {
+      font-size: 1.6rem;
+      margin: 10px 0;
+    }
+
+    .product-card p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .product-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      color: #000;
+    }
+
+    .action-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .demo-btn {
+      background: #000;
+      color: #fff;
+    }
+    .demo-btn:hover {
+      background: #333;
+    }
+
+    .order-btn {
+      background: #28a745;
+      color: #fff;
+    }
+    .order-btn:hover {
+      background: #218838;
+    }
+
+    @media (min-width: 600px) {
+      .action-buttons {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Since Our Heart Met</h1>
-    <p>আমাদের ভালবাসার ক্যালেন্ডার</p>
-  </header>
 
-  <main style="padding: 20px;">
-    <img src="../images/template2.jpg" alt="Since Our Heart Met" style="width: 100%; max-width: 600px;">
-    <h2>দাম: 1,500 টাকা</h2>
-    <p>এই ডিজিটাল প্রোডাক্টটি আমাদের সম্পর্কের প্রতিটি মুহূর্তকে ধরে রাখে।</p>
+  <div class="container">
+    <div class="top-bar">
+      <a href="../index.html" class="btn home-btn">🏠 Home</a>
+    </div>
 
-    <a href="https://wa.me/8801935255404?text=..." target="_blank" class="order-btn">অর্ডার করুন</a>
-  </main>
+    <div class="product-card">
+      <img src="../images/template2.jpg" alt="Since Our Heart Met">
+      <h2>Since Our Heart Met</h2>
+      <p>এই ডিজিটাল প্রোডাক্টটি আপনার ভালবাসার প্রতিটি দিনকে স্মরণীয় করে রাখে।</p>
+      <h3>দাম: 1,500 টাকা</h3>
 
-  <footer>
-    <p>&copy; 2025 Get Yours One Now</p>
-  </footer>
+      <div class="action-buttons">
+        <a href="https://my-prince-my-world-404.on.drv.tw/Final-Nazifa-Adnan.html" target="_blank" class="btn demo-btn">🌐 Live Site Demo</a>
+        <a href="https://wa.me/8801935255404?text=আমি%20Since%20Our%20Heart%20Met%20অর্ডার%20করতে%20চাই%0Aদাম:%201,500%20টাকা" target="_blank" class="btn order-btn">🛒 Order Now</a>
+      </div>
+    </div>
+
+    <footer style="text-align: center; margin-top: 30px; font-size: 0.9rem; color: #777;">
+      <p>&copy; 2025 Get Yours One Now</p>
+    </footer>
+  </div>
+
 </body>
 </html>
