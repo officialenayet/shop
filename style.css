@@ -1,33 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #f7f7f7;
-  color: #333;
-}
-
-header {
-  text-align: center;
-  padding: 40px 20px 20px;
-  background: #fff;
-  border-bottom: 1px solid #ddd;
-}
-
-header h1 {
-  font-size: 1.8rem;
-}
-
-header p {
-  font-size: 1rem;
-  color: #666;
-  margin-top: 8px;
-}
-
-/* Slider Style */
+/* Slider Style for mobile */
 .product-slider {
   display: flex;
   overflow-x: auto;
@@ -37,6 +8,7 @@ header p {
   -webkit-overflow-scrolling: touch;
 }
 
+/* Product Card */
 .product-card {
   background: #fff;
   border: 1px solid #ddd;
@@ -53,66 +25,17 @@ header p {
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
-.product-card img {
-  width: 100%;
-  border-radius: 6px;
-}
-
-.product-card h2 {
-  font-size: 1.2rem;
-  margin: 15px 0 5px;
-}
-
-.product-card p {
-  font-size: 0.95rem;
-  color: #555;
-}
-
-.product-card a {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 16px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 0.9rem;
-  transition: background 0.2s ease;
-}
-
-.product-card a:first-of-type {
-  background: #000;
-  color: #fff;
-  margin-right: 10px;
-}
-
-.product-card a:first-of-type:hover {
-  background: #333;
-}
-
-.demo-btn {
-  background: #eee;
-  color: #333;
-}
-
-.demo-btn:hover {
-  background: #ddd;
-}
-
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 0.85rem;
-  color: #777;
-}
-
-/* Responsive */
+/* Desktop grid */
 @media (min-width: 768px) {
   .product-slider {
-    justify-content: center;
-    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    overflow-x: visible;
   }
 
   .product-card {
-    flex: 0 0 300px;
+    flex: none;
+    max-width: 100%;
   }
 }
