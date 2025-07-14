@@ -83,22 +83,6 @@
   margin: 0 auto;
   border-radius: 8px; /* চাইলে বাদ দাও */
     }
-
-    <!-- কার্ট বাটনেরস্টাইল বা সিএসএস -->
-
-    .add-to-cart-btn {
-  display: inline-block;
-  background: #007bff;
-  color: #fff;
-  padding: 8px 14px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 0.9rem;
-  margin-top: 10px;
-}
-.add-to-cart-btn:hover {
-  background: #0056b3;
-}
     
   </style>
 </head>
@@ -128,7 +112,6 @@
       <p>1,000 Taka</p>
       <a href="https://wa.me/8801935255404?text=%F0%9F%8C%9F%20*প্রিয়%20Get%20Yours%20One%20Now%20টিম,*%0A%0Aআমি%20একটি%20প্রোডাক্ট%20অর্ডার%20করতে%20আগ্রহী।%20অনুগ্রহ%20করে%20আমার%20অর্ডারটি%20নিশ্চিত%20করুন।%20%F0%9F%9B%92%0A%0A%F0%9F%93%A6%20*পণ্যের%20নাম:*%20Baby%20Age%20Tracker%20%0A%F0%9F%92%B0%20*দাম:*%201,000%20টাকা%20%0A%0A%F0%9F%94%97%20*পণ্যের%20বিস্তারিত:*%20https://officialenayet.github.io/shop%0A%0Aধন্যবাদ।%20আশা%20করছি%20দ্রুত%20আপনার%20উত্তর%20পাব।%20%F0%9F%98%8A" target="_blank">Order Now</a>
       <a href="products/product1.html" class="demo-btn">See Details</a>
-    <a href="#" class="add-to-cart-btn" data-id="1" data-name="Baby Age Tracker" data-price="1000">Add to Cart</a>
     </div>
 
     <!-- Product 2 -->
@@ -138,40 +121,9 @@
       <p>1,500 Taka</p>
       <a href="https://wa.me/8801935255404?text=%F0%9F%8C%9F%20*প্রিয়%20Get%20Yours%20One%20Now%20টিম,*%0A%0Aআমি%20একটি%20প্রোডাক্ট%20অর্ডার%20করতে%20আগ্রহী।%20অনুগ্রহ%20করে%20আমার%20অর্ডারটি%20নিশ্চিত%20করুন।%20%F0%9F%9B%92%0A%0A%F0%9F%93%A6%20*পণ্যের%20নাম:*%20Since%20Our%20Hearts%20Met%20%0A%F0%9F%92%B0%20*দাম:*%201,500%20টাকা%20%0A%0A%F0%9F%94%97%20*পণ্যের%20বিস্তারিত:*%20https://officialenayet.github.io/shop%0A%0Aধন্যবাদ।%20আশা%20করছি%20দ্রুত%20আপনার%20উত্তর%20পাব।%20%F0%9F%98%8A" target="_blank">Order Now</a>
       <a href="products/product2.html" class="demo-btn">See Details</a>
-   <a href="#" class="add-to-cart-btn" data-id="1" data-name="Baby Age Tracker" data-price="1000">Add to Cart</a>
     </div>
 
   </main>
-
-  <!-- কার্ট অ্যাডেরস্ক্রীপ্ট-->
-  <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const cartButtons = document.querySelectorAll('.add-to-cart-btn');
-  cartButtons.forEach(button => {
-    button.addEventListener('click', function(e) {
-      e.preventDefault();
-      const id = this.dataset.id;
-      const name = this.dataset.name;
-      const price = this.dataset.price;
-
-      // আগের কার্ট ডেটা আনো
-      let cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-      // প্রোডাক্ট যোগ করো
-      cart.push({
-        id: id,
-        name: name,
-        price: price
-      });
-
-      // LocalStorage-এ সেভ করো
-      localStorage.setItem('cart', JSON.stringify(cart));
-
-      alert(`${name} has been added to your cart!`);
-    });
-  });
-});
-  </script>
 
   <!-- JavaScript for menu toggle and zoom redirect -->
   <script>
