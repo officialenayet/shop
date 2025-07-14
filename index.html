@@ -5,37 +5,133 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Get Yours One Now</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Header Styles */
+    .site-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      background: #fff;
+      border-bottom: 1px solid #ddd;
+      position: relative;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo {
+      height: 40px;
+      width: auto;
+    }
+
+    .menu-container {
+      position: relative;
+    }
+
+    .menu-button {
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding: 5px 10px;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 110%;
+      right: 0;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      min-width: 160px;
+      z-index: 10;
+    }
+
+    .dropdown-menu a {
+      display: block;
+      padding: 10px 15px;
+      color: #333;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    .dropdown-menu a:hover {
+      background: #f0f0f0;
+    }
+
+    /* Show dropdown when active */
+    .menu-container.show .dropdown-menu {
+      display: block;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Get Yours One Now</h1>
-    <p>For Your Loved Ones</p>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-left">
+      <img src="images/logo.png" alt="Logo" class="logo">
+      <h1>Get Yours One Now</h1>
+    </div>
+    <div class="menu-container">
+      <button class="menu-button">⋮</button>
+      <div class="dropdown-menu">
+        <a href="https://officialenayet.github.io/shop/about.html" target="_blank">About Me</a>
+        <a href="https://link.bio/officialenayet" target="_blank">Contact Me</a>
+      </div>
+    </div>
   </header>
 
-<main class="product-slider">
+  <!-- Main -->
+  <main class="product-slider">
 
-  <!-- Product 1 -->
-  <div class="product-card">
-    <img src="images/template1.jpg" alt="Baby Age Tracker">
-    <h2>Baby Age Tracker</h2>
-    <p>1,000 Taka</p>
-    <a href="https://wa.me/8801935255404?text=আমি%20একটি%20প্রোডাক্ট%20অর্ডার%20করতে%20চাই%20%F0%9F%9B%92%0A%F0%9F%A7%BE%20নাম:%20প্রোডাক্ট%20Baby%20Age%20Tracker%0A%F0%9F%92%B0%20দাম:%201,000%20টাকা%0A%F0%9F%94%97%20লিংক:%20https://officialenayet.github.io/shop" target="_blank">Order Now</a>
-    <a href="products/product1.html" class="demo-btn">See Details</a>
-  </div>
+    <!-- Product 1 -->
+    <div class="product-card">
+      <img src="images/template1.jpg" alt="Baby Age Tracker">
+      <h2>Baby Age Tracker</h2>
+      <p>1,000 Taka</p>
+      <a href="https://wa.me/8801935255404?text=আমি%20একটি%20প্রোডাক্ট%20অর্ডার%20করতে%20চাই%20%F0%9F%9B%92%0A%F0%9F%A7%BE%20নাম:%20প্রোডাক্ট%20Baby%20Age%20Tracker%0A%F0%9F%92%B0%20দাম:%201,000%20টাকা%0A%F0%9F%94%97%20লিংক:%20https://officialenayet.github.io/shop" target="_blank">Order Now</a>
+      <a href="products/product1.html" class="demo-btn">See Details</a>
+    </div>
 
-  <!-- Product 2 -->
-  <div class="product-card">
-    <img src="images/template2.jpg" alt="Since Our Heart Met">
-    <h2>Since Our Heart Met</h2>
-    <p>1,500 Taka</p>
-    <a href="https://wa.me/8801935255404?text=আমি%20একটি%20প্রোডাক্ট%20অর্ডার%20করতে%20চাই%20%F0%9F%9B%92%0A%F0%9F%A7%BE%20নাম:%20প্রোডাক্ট%20Since%20Our%20Heart%20Met%0A%F0%9F%92%B0%20দাম:%201,500%20টাকা%0A%F0%9F%94%97%20লিংক:%20https://officialenayet.github.io/shop" target="_blank">Order Now</a>
-    <a href="products/product2.html" class="demo-btn">See Details</a>
-  </div>
+    <!-- Product 2 -->
+    <div class="product-card">
+      <img src="images/template2.jpg" alt="Since Our Heart Met">
+      <h2>Since Our Heart Met</h2>
+      <p>1,500 Taka</p>
+      <a href="https://wa.me/8801935255404?text=আমি%20একটি%20প্রোডাক্ট%20অর্ডার%20করতে%20চাই%20%F0%9F%9B%92%0A%F0%9F%A7%BE%20নাম:%20প্রোডাক্ট%20Since%20Our%20Heart%20Met%0A%F0%9F%92%B0%20দাম:%201,500%20টাকা%0A%F0%9F%94%97%20লিংক:%20https://officialenayet.github.io/shop" target="_blank">Order Now</a>
+      <a href="products/product2.html" class="demo-btn">See Details</a>
+    </div>
 
-</main>
+  </main>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Get Yours One Now</p>
   </footer>
+
+  <!-- JavaScript for menu toggle -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const menuButton = document.querySelector('.menu-button');
+      const menuContainer = document.querySelector('.menu-container');
+      
+      menuButton.addEventListener('click', function(e) {
+        e.stopPropagation();
+        menuContainer.classList.toggle('show');
+      });
+
+      document.addEventListener('click', function(e) {
+        if (!menuContainer.contains(e.target)) {
+          menuContainer.classList.remove('show');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
