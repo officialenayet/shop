@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <title>Track Your Salah Daily</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f7f7f7;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .top-bar {
+      display: flex;
+      justify-content: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 18px;
+      margin: 5px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: all 0.2s ease;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .home-btn {
+      background: #eee;
+      color: #333;
+    }
+    .home-btn:hover {
+      background: #ddd;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .product-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+
+    .live-preview {
+      max-width: 600px;
+      margin: 0 auto 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      overflow: hidden;
+    }
+
+    .live-preview iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+    }
+
+    .product-card h2 {
+      font-size: 1.6rem;
+      margin: 10px 0;
+    }
+
+    .product-card p {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .product-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      color: #000;
+    }
+
+    .action-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .demo-btn {
+      background: #000;
+      color: #fff;
+    }
+    .demo-btn:hover {
+      background: #333;
+    }
+
+    .order-btn {
+      background: #28a745;
+      color: #fff;
+    }
+    .order-btn:hover {
+      background: #218838;
+    }
+
+    @media (min-width: 600px) {
+      .action-buttons {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Home Button -->
+    <div class="top-bar">
+      <a href="../index.html" class="btn home-btn">🏠 Home</a>
+    </div>
+
+    <div class="product-card">
+      <!-- Live Preview -->
+      <div class="live-preview">
+        <iframe 
+          src="https://officialenayet.github.io/namaj/"
+          sandbox="allow-scripts allow-same-origin"
+          loading="lazy">
+        </iframe>
+      </div>
+
+      <h2>Track Your Salah Daily</h2>
+      <p>এই ডিজিটাল প্রোডাক্টটি আপনার নামাজের হিসেব দেখাবে । </p>
+      <h3>দাম: 2,000 টাকা</h3>
+
+      <div class="action-buttons">
+        <a href="https://officialenayet.github.io/namaj/" target="_blank" class="btn demo-btn">🌐 Full Screen Demo</a>
+        <a href="https://wa.me/8801935255404?text=%F0%9F%8C%9F%20*প্রিয়%20Get%20Yours%20One%20Now%20টিম,*%0A%0Aআমি%20একটি%20প্রোডাক্ট%20অর্ডার%20করতে%20আগ্রহী।%20অনুগ্রহ%20করে%20আমার%20অর্ডারটি%20নিশ্চিত%20করুন।%20%F0%9F%9B%92%0A%0A%F0%9F%93%A6%20*পণ্যের%20নাম:*%20Track%20Your%20Salah%20Daily%20%0A%F0%9F%92%B0%20*দাম:*%202,000%20টাকা%20%0A%0A%F0%9F%94%97%20*পণ্যের%20বিস্তারিত:*%20https://officialenayet.github.io/shop/products/product3.html%0A%0Aধন্যবাদ।%20আশা%20করছি%20দ্রুত%20আপনার%20উত্তর%20পাব।%20%F0%9F%98%8A" target="_blank" class="btn demo-btn">Order Now</a>
+      </div>
+    </div>
+
+    <footer style="text-align: center; margin-top: 30px; font-size: 0.9rem; color: #777;">
+      <p>&copy; 2025 @official.enayet</p>
+    </footer>
+  </div>
+
+</body>
+</html>
